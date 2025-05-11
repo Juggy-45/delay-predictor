@@ -2,8 +2,8 @@ import joblib
 import pandas as pd
 
 # Step 1: Load trained model and encoders
-model = joblib.load("../model/delay_model.pkl")
-label_encoders = joblib.load("../model/label_encoders.pkl")
+model = joblib.load("model/delay_model.pkl")
+label_encoders = joblib.load("model/label_encoders.pkl")
 
 # Step 2: Create a prediction function
 def predict_delay(input_data: dict):
